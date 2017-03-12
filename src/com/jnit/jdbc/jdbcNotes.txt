@@ -1,0 +1,45 @@
+Database - Tables(Set of rows and columns), views, stored procedures, triggers
+vendors - Oracle, Mysql, Sybase, DB2, Post-gre's - RDBMS(Relational database management systems)
+No-SQL databases - Mongodb, Cassandra, Couchdb
+SQL -> Structured query language
+CRUD
+-Create - Insert statements
+-Read - Select statements
+-Update - Update stateemnts
+-Delete - Delete statements
+-JDK -derby database
+Mysql - open source - version 5
+
+JDBC
+-Introduction to databases and Sql
+-Basic sql statements
+-Interfaces(Statement, Connection, Resultset, Driver)
+-Resultset type
+  -TYPE_FOWARD_ONLY
+  -TYPE_SCROLL_SESNITIVE - sensitive to changes that happens to db during scrolling
+  -TYPE_SCROLL_INSENSITIVE 
+-Resultset concurrency mode
+  - CONCUR_READ_ONLY
+  - CONCUR_UPDATABLE -> lets u modify the database through result set
+  
+ -execute(boolean, stmt.getResultset(),stmt.getUpdateCount()), executeUpdate(int),executeQuery(RS)
+ -query executions, resultset iterations, resultset get methods
+ -result set index starts at 1
+ -result set data types and conversions
+ -Scrollable resultset demo with beforeFirst(),first(),last(),afterlast(),previous()
+ absolute(int),- absolute lets us go to a specific row, negative int then we can go from backward
+ relative(int)- moves forward or backward that many number of rows specified by int value
+ 
+ -closing db resources
+ -exception handling - e.getSQLState() and e.geterrorCode()
+ -Transactions and save points
+ 
+ http://www.journaldev.com/2483/java-jdbc-transaction-management-savepoint
+ 
+ --One to One - Employee and Address(EmpId)
+ --One to many - Customer to Order(Customer, Order(custId))//Customer -List<Order>//Order -> Customer(ManytoOne)
+ --many to many - Patient(List<Doctor>) and Doctor(List<Patient>)(Patient, Doctor, Patient_Doctor(PatientId, DoctorId))
+ --transactions on save points example
+ --tostring,equals,hashcode
+ 
+ 

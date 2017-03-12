@@ -1,0 +1,21 @@
+IO -> character streams and byte streams
+NIO -> Channels and Buffers
+
+The data is loaded in to buffer from the channel, so the thread reading the data is not blocked, when the data
+is being loaded it can do something else as well, like read from other channels
+
+//Path vs File
+-Path pretty much have the same functionality as File to represent files and directories
+in addition to that it can also work with symbolic links and is very performant
+-Path is an interface where as File is a class
+-Paths is a factory class which we can use to get an implementation for Path based on OS
+-creating paths with URI
+-fileURI
+-http,https
+-ftp
+
+/home/appibh/tomcat/bin
+
+TomcatBin = /home/appibh/tomcat/bin
+
+cd TomcatBin - SymLink - ln -s

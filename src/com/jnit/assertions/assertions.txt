@@ -1,0 +1,15 @@
+//to confirm that ur code is working as per developer assumptions
+//assertion statements will not executed in production(we disable assertions)
+assert booleanExpression;
+assert booleanExpression : ErrorMessage;(error message will be thrown when the expression is false)
+//types of assertions
+-Invariant assertion -> validates ur assumption on some local property of a method
+-Class Invariant(property) -> validates ur assumption on object state
+-Control flow assertion -> switch cases(assume ur flow will not go to a certian path)
+-Pre conditional assertions -> for private methods(public method -> call a private method(provide an assumption to invoke that private method))
+-Post conditional assertion -> public methods and we generally assert the result
+
+-Never test ur method inputs using assertions, throw an IllegalArgumentException
+-Added to Java 1.4
+- ea or enableassertions as VM parameter
+- da or disableassertions as VM parameter

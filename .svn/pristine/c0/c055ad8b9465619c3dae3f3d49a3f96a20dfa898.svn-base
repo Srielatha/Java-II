@@ -1,0 +1,20 @@
+1.Process
+2.Thread
+3.Thread types
+4.Thread Scheduler(may employ round robin schedule to provide equal cpu cycles for your threads) and Context Switch
+5.Thread Priorities
+6.Creation of threads - extends Thread and Creating Runnable
+  -Creating deamon thread
+7.Thread execution Sequence
+8.Thread sleep
+9.Thread priority and Join
+10.Executor Service - creating single thread executor, shutdown,shutdownNow 
+11. Submitting tasks to executor with submit and execute
+12.Callable vs Runnable
+Concurrent Collection classes
+Parallel streams
+
+Cyclic barrier -> t1, t2, t3...
+
+Fork and Join - RecursiveTask -> T compute, RecursiveAction -> void -> compute
+ForkAndJoinPool -> CPU count

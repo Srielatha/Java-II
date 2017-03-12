@@ -1,0 +1,59 @@
+javatrain - Train@Java!
+
+Input/Output
+--java.io package
+-File class (java.io.File)
+ - file itself, directory
+ - new File("path of the file");(C:/users/appi/a.txt);
+-Absolute vs relative path (a.txt,/appi/a.txt, ../../a.txt)
+--Streams(I/O streams) -
+-Byte Streams - byte and binary formats
+-Character Streams -strings and characters, works well with textual data
+----Builtin streams
+-System.out
+-System.in
+-Sytem.err
+
+--Low level vs High level streams
+-low level stream directly interacts with the file system
+-high level stream wraps the low level stream and can also take a high level stream as input
+ex: BufferedReader reader = new BufferedReader(new FileReader("abc.txt"));
+    ObjectInputStream os = new ObjectInputStream(new BufferedInputStream(new FileInputStream("abc.txt"));)
+--we can not mix readers,writers,inutstreams,outputstreams and use them
+ex: BufferedReader reader = new BufferedReader(new FileWriter());
+    BufferedInputStream stream = new BufferedInputStream(new FileOutputStream());
+    
+--closing streams is important to prevent resource leaks
+--flushing the stream with flush()
+--marking the stream with mark(int) and reset()
+--skipping over data with skip(int)
+    
+---Input---
+InputStream
+ -FileInputStream - reads data one byte at a time
+ -ObjectInputSteam
+ -FilteredInputStream
+    -BufferedInputStram - reads data in groups of bytes
+    
+---Output---
+OutputStream
+  -FileOutputStream
+  -ObjectOutputStream
+  -PrintStream
+  -FilteredOutputStream
+    -BufferedOutputStram
+    
+ Readers/Writers
+ 
+ ---Readers---
+ Reader
+  -BufferedReader
+  -InputStreamReader
+    -FileReader
+    
+---Writers---
+ Writer
+  -BufferedWriter
+  -PrintWriter
+  -OutputStreamWriter
+    -FileWriter

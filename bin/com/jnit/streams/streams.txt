@@ -1,0 +1,29 @@
+Stream -> continous flow of data
+finite stream -> stops at some point(ends with a terminal operation)
+infinite stream -> runs infinite
+
+Finite streams 
+- Intermediate Operations
+- Terminal Operations
+
+Stream -> assembly process of anything
+
+Animal Exhibit -> painted signed
+
+-blank paint signs
+-a person places an order for signs
+-opens the box
+-paint the sign
+-write the messages
+-ship them to the desired animal exhibits
+-put the sign in the appropriate place - terminal operation
+
+//intermediate operations
+infinite streams - InfiniteStream.java
+data flow in pipeline - InfiniteStream
+Primitive streams - PrimitiveStream.java
+Summarized Statistics
+PrimitiveOptionals
+Primitive functional interfaces
+chaining optionals
+collecting results
